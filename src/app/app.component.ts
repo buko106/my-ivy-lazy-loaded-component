@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ChildComponent } from './component/child.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-lazy-modal';
+  constructor(private readonly matDialog: MatDialog) {}
+
+  openModal() {
+    this.matDialog.open(ChildComponent);
+  }
 }
