@@ -5,14 +5,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from './component/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
   ],
-  entryComponents: [ChildComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
