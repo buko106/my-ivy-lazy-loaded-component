@@ -9,5 +9,6 @@ import { ChildComponent } from './child.component';
   ]
 })
 export class ModalModule {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   readonly ChildComponent = ChildComponent;
 }
