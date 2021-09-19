@@ -4,9 +4,7 @@ import { ChildComponent } from './child.component';
 
 @NgModule({
   declarations: [ChildComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
 })
 export class ModalModule {
   // eslint-disable-next-line @typescript-eslint/naming-convention
