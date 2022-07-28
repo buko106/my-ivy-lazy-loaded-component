@@ -128,9 +128,10 @@
       }
     }
   },
-  "defaultProject": "my-lazy-modal",
   "cli": {
     "analytics": false,
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
