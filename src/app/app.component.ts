@@ -1,8 +1,4 @@
-import {
-  Component,
-  Injector,
-  ɵcreateInjector as createInjector,
-} from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -18,12 +14,7 @@ export class AppComponent {
 
   async openModal() {
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    const { ModalModule } = await import('./modal/modal.module');
-
-    const injector = createInjector(ModalModule, this.injector);
-
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    const { ChildComponent } = injector.get(ModalModule);
+    const { ChildComponent } = await import('./modal/child.component');
 
     const ref = this.matDialog.open(ChildComponent, {
       data: { name: 'buko106' },
