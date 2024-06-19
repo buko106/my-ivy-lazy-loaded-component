@@ -12,13 +12,13 @@ import { MatButtonModule } from '@angular/material/button';
 export class AppComponent {
   constructor(
     private readonly injector: Injector,
-    private readonly matDialog: MatDialog
+    private readonly matDialog: MatDialog,
   ) {}
 
   async openModal() {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
     const { ChildComponent } = await import('./modal/child.component');
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const ref = this.matDialog.open(ChildComponent, {
       data: { name: 'buko106' },
       panelClass: 'my-mat-dialog-pane',
