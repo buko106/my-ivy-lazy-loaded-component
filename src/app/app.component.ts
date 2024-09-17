@@ -24,4 +24,11 @@ export class AppComponent {
       panelClass: 'my-mat-dialog-pane',
     });
   }
+
+  async openCounterModal() {
+    const { CounterComponent } = await import('./modal/counter.component');
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const ref = this.matDialog.open(CounterComponent, {});
+  }
 }
