@@ -2,7 +2,7 @@ import 'hammerjs';
 import {
   enableProdMode,
   importProvidersFrom,
-  provideZoneChangeDetection,
+  provideZonelessChangeDetection,
 } from '@angular/core';
 
 import { environment } from './environments/environment';
@@ -18,7 +18,7 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideZoneChangeDetection(),
+    provideZonelessChangeDetection(),
     importProvidersFrom(BrowserModule, MatButtonModule, MatDialogModule),
     provideAnimations(),
   ],
