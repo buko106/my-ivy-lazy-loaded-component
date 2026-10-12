@@ -2,16 +2,16 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 
 @Component({
-    template: `
+  template: `
     @if (count() === 0) {
       <button mat-button (click)="increment()">Click Here!</button>
     } @else {
       <button mat-button (click)="increment()">{{ count() }} Clicks!</button>
     }
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [MatButton],
-    styles: [``]
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [MatButton],
+  styles: [``],
 })
 export class CounterComponent {
   readonly count = signal(0);
