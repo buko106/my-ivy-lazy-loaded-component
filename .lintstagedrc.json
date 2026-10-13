@@ -1,12 +1,10 @@
 {
   "*.ts": [
     "prettier --write --",
-    "ng-lint-staged lint --fix --",
-    "git add"
+    "ng-lint-staged lint --fix --"
   ],
   "*.html": [
     "prettier --write --",
-    "ng-lint-staged lint --fix --",
-    "git add"
+    "ng-lint-staged lint --fix --"
   ]
 }
