@@ -20,7 +20,9 @@ Run `ng test` to execute the unit tests via [Vitest](https://vitest.dev).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run e2e` to execute the end-to-end tests via [Playwright](https://playwright.dev). The dev server is started automatically.
+
+The first time, install the browser with `npx playwright install chromium`.
 
 ## Further help
 
