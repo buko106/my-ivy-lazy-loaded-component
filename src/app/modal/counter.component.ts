@@ -9,7 +9,6 @@ import { MatButton } from '@angular/material/button';
       <button mat-button (click)="increment()">{{ count() }} Clicks!</button>
     }
   `,
-  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [MatButton],
   styles: [``],
