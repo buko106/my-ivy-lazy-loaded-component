@@ -60,9 +60,5 @@
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.71.2",
     "webpack": "5.76.2"
-  },
-  "volta": {
-    "node": "24.21.0",
-    "npm": "11.19.0"
   }
 }
